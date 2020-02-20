@@ -1,0 +1,31 @@
+.btn {
+  background-color: #b14599;
+  border: none;
+  border: transparent;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.8rem 1.6rem;
+  box-shadow: 0 0 20px #b145998c;
+
+  &--width {
+    width: 10.5rem;
+    @media screen and (min-width: 320px){
+      width: 9.5rem;
+    }
+    @media screen and (min-width: 320px){
+      width: 10.5rem;
+    }
+  }
+
+  &:focus {
+    outline: 1px double #993a84;
+    border: none;
+  }
+
+  &:hover {
+    background-color: #993a84;
+  }
+}

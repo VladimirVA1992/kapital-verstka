@@ -1,0 +1,119 @@
+.for-beginner {
+  width: 100%;
+  min-height: 65rem;
+  background: url(../img/for-beginers.jpg) 50% 0 no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 320px){
+    flex-direction: column;
+    padding-left: 1rem;
+    min-height: 55rem;
+  }
+  @media screen and (min-width: 576px){
+    flex-direction: column;
+    padding-left: 1rem;
+    min-height: 55rem;
+  }
+  @media screen and (min-width: 1200px){
+    flex-direction: row;
+    min-height: 65rem;
+  }
+
+  &__title{
+    &--nobold {
+      font-weight: 300;
+    }
+    h2 {
+      font-size: 1.6rem;
+      color: #854399;
+      letter-spacing: 3px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0 0 1rem 0;
+      @media screen and (min-width: 320px){
+        font-size: 1.4rem;
+      }
+      @media screen and (min-width: 576px){
+        font-size: 1.4rem;
+      }
+      @media screen and (min-width: 1200px){
+        font-size: 1.6rem
+      }
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 4.6rem;
+    }
+  }
+
+
+  &__content {
+    width: 50%;
+    padding-left: 33rem;
+    padding-top: 20.3rem;
+    @media screen and (min-width: 320px){
+      width: 100%;
+      padding: 0;
+    }
+    @media screen and (min-width: 576px){
+      width: 100%;
+      padding: 0;
+    }
+    @media screen and (min-width: 1200px){
+      width: 50%;
+      padding-left: 33rem;
+      padding-top: 20.3rem;
+    }
+  }
+
+  &__text {
+    margin: 4rem 0 6.5rem 0;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.2px;
+    @media screen and (min-width: 320px){
+      margin: 3rem 0;
+    }
+    @media screen and (min-width: 576px){
+      margin: 3rem 0;
+    }
+    @media screen and (min-width: 1200px){
+      margin: 4rem 0 6.5rem 0;
+    }
+  }
+
+  &__img {
+    width: 50%;
+    padding: 20rem 12rem 0 12rem;
+    @media screen and (min-width: 320px){
+      padding: 0;
+      padding-left: 4rem;
+      padding-top: 3rem;
+    }
+    @media screen and (min-width: 576px){
+      padding: 0;
+      padding-left: 15rem;
+    }
+    @media screen and (min-width: 1200px){
+      padding: 20rem 12rem 0 12rem;
+    }
+    img {
+      width: 37rem;
+      @media screen and (min-width: 320px){
+        width: 100%;
+        min-width: 20rem;
+      }
+      @media screen and (min-width: 576px){
+        width: 100%;
+        min-width: 30rem;
+      }
+      @media screen and (min-width: 576px){
+        width: 100%;
+        width: 37rem;
+      }
+    }
+  }
+}
+
