@@ -5,18 +5,16 @@
   background-size: contain;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 10%;
   @media screen and (min-width: 320px){
     flex-direction: column;
-    padding-left: 1rem;
     min-height: 55rem;
   }
-  @media screen and (min-width: 576px){
-    flex-direction: column;
-    padding-left: 1rem;
-    min-height: 55rem;
+  @media screen and (min-width: 768px){
+    flex-direction: row;
+    padding: 5%;
   }
   @media screen and (min-width: 1200px){
-    flex-direction: row;
     min-height: 65rem;
   }
 
@@ -30,11 +28,7 @@
       letter-spacing: 3px;
       font-weight: bold;
       text-transform: uppercase;
-      margin: 0 0 1rem 0;
       @media screen and (min-width: 320px){
-        font-size: 1.4rem;
-      }
-      @media screen and (min-width: 576px){
         font-size: 1.4rem;
       }
       @media screen and (min-width: 1200px){
@@ -50,21 +44,16 @@
 
 
   &__content {
-    width: 50%;
-    padding-left: 33rem;
-    padding-top: 20.3rem;
     @media screen and (min-width: 320px){
       width: 100%;
-      padding: 0;
+      padding: 5%;
     }
-    @media screen and (min-width: 576px){
-      width: 100%;
-      padding: 0;
+    @media screen and (min-width: 768px){
+      width: 50%;
     }
     @media screen and (min-width: 1200px){
-      width: 50%;
-      padding-left: 33rem;
-      padding-top: 20.3rem;
+      padding-left: 20%;
+      padding-top: 12%;
     }
   }
 
@@ -73,28 +62,13 @@
     font-size: 1.4rem;
     line-height: 1.9rem;
     letter-spacing: 0.2px;
-    @media screen and (min-width: 320px){
-      margin: 3rem 0;
-    }
-    @media screen and (min-width: 576px){
-      margin: 3rem 0;
-    }
-    @media screen and (min-width: 1200px){
-      margin: 4rem 0 6.5rem 0;
-    }
   }
 
   &__img {
     width: 50%;
-    padding: 20rem 12rem 0 12rem;
-    @media screen and (min-width: 320px){
-      padding: 0;
-      padding-left: 4rem;
-      padding-top: 3rem;
-    }
-    @media screen and (min-width: 576px){
-      padding: 0;
-      padding-left: 15rem;
+    padding: 0 25%;
+    @media screen and (min-width: 768px){
+      padding: 10% 0;
     }
     @media screen and (min-width: 1200px){
       padding: 20rem 12rem 0 12rem;
@@ -106,11 +80,9 @@
         min-width: 20rem;
       }
       @media screen and (min-width: 576px){
-        width: 100%;
         min-width: 30rem;
       }
-      @media screen and (min-width: 576px){
-        width: 100%;
+      @media screen and (min-width: 992px){
         width: 37rem;
       }
     }

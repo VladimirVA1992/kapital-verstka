@@ -1,61 +1,28 @@
 .benefits {
   width: 100%;
-  min-height: 80rem;
   background: url(../img/benefit.jpg) 50% 0 no-repeat;
-  background-size: contain;
-  padding-top: 4.5rem;
-  @media screen and (min-width: 320px){
-    min-height: 70rem;
-  }
-  @media screen and (min-width: 576px){
-    min-height: 60rem;
-  }
-  @media screen and (min-width: 1200px){
-    min-height: 80rem;
-  }
-
+  background-size: cover;
+  height: 100%;
+  padding: 5% 0;
 
   &__content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 24rem;
-    padding-right: 24rem;
-    @media screen and (min-width: 320px){
-      padding: 0;
-    }
-    @media screen and (min-width: 576px){
-      padding: 0;
-    }
-    @media screen and (min-width: 1200px){
-      padding-left: 24rem;
-      padding-right: 24rem;
-    }
+    padding: 0 10%;
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 33.3%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 0;
-    padding-right: 0;
     @media screen and (min-width: 320px){
-      font-size: 1rem;
-      padding-bottom: 0;
-      padding-left: 1rem;
-      padding-right: 3rem;
+      width: 50%;
+      padding: 5% 0;
     }
     @media screen and (min-width: 576px){
-      font-size: 1.3rem;
-      padding-bottom: 0;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-    @media screen and (min-width: 1200px){
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-      padding-left: 0;
-      padding-right: 0;
+      width: 33.3%;
     }
   }
 
@@ -79,32 +46,10 @@
   }
 
   &__icon {
-    padding-left: 15rem;
-    @media screen and (min-width: 320px){
-      padding: 0;
-    }
-    @media screen and (min-width: 576px){
-      padding: 0;
-      padding-left: 4rem;
-    }
-    @media screen and (min-width: 1200px){
-      padding: 0;
-      padding-left: 15rem;
-    }
   }
 
   &__text {
     text-align: center;
-    padding-left: 4rem;
-    @media screen and (min-width: 320px){
-      padding: 0;
-    }
-    @media screen and (min-width: 576px){
-      padding: 0;
-    }
-    @media screen and (min-width: 1200px){
-      padding-left: 4rem;
-    }
   }
 }
 

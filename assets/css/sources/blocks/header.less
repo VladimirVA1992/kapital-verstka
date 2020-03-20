@@ -1,94 +1,91 @@
 .header {
   width: 100%;
-  min-height: 80rem;
-  background: url(../img/banner-backgr.jpg) 50% 0 no-repeat;
-  background-size: contain;
   display: flex;
   flex-direction: column;
-  padding-left: 32.8rem;
-  padding-top: 8.9rem;
-
-  @media screen and (min-width: 320px){
-    padding: 1rem;
-    min-height: 20rem;
-    background-size: 100%;
+  @media screen and (min-width: 320px) {
+    background: url(../img/baclground.jpg) 50% 0 no-repeat;
+    padding: 5%;
+    height: 100%;
+    background-size: cover;
+    align-items: center;
   }
-  @media screen and (min-width: 576px){
-    padding: 1rem;
-    min-height: 35rem;
-    background-size: 100%;
+  @media screen and (min-width: 576px) {
+    align-items: start;
   }
-  @media screen and (min-width: 1200px){
-    padding-left: 32.8rem;
-    padding-top: 8.9rem;
-    min-height: 80rem;
-    flex-direction: column;
+  @media screen and (min-width: 768px) {
+    background: url(../img/banner-backgr.jpg) 50% 0 no-repeat;
     background-size: contain;
+    min-height: 55rem;
+    padding-left: 20%;
+  }
+  @media screen and (min-width: 992px) {
+    height: 65rem;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 67rem;
+  }
+  @media screen and (min-width: 1300px) {
+    height: 72rem;
+  }
+  @media screen and (min-width: 1400px) {
+    height: 80rem;
+  }
+  @media screen and (min-width: 1500px) {
+    height: 85rem;
+  }
+  @media screen and (min-width: 1600px) {
+    height: 100rem;
   }
 
   &__title {
-    margin: 0;
     h1 {
-      font-size: 4.5rem;
       text-transform: uppercase;
       color: white;
       margin: 0;
-      @media screen and (min-width: 320px){
+      @media screen and (min-width: 320px) {
         font-size: 2.5rem;
       }
-      @media screen and (min-width: 576px){
+      @media screen and (min-width: 576px) {
         font-size: 4.5rem;
       }
     }
   }
 
-  &__text {
-    font-family: 'Gotham Pro', sans-serif;
-    font-size: 4.5rem;
-    text-transform: uppercase;
-    color: white;
-    margin-bottom: 4.5rem;
-    @media screen and (min-width: 320px){
-      margin: 0 0 0.8rem 0;
-      font-size: 1.5rem;
-    }
-    @media screen and (min-width: 576px){
-      margin: 0 0 1.8rem 0;
-      font-size: 2.5rem;
-    }
-    @media screen and (min-width: 1200px){
+  &__p {
+    &:first-child {
+      font-family: 'Gotham Pro', sans-serif;
       font-size: 4.5rem;
-      margin-bottom: 4.5rem;
-    }
-    p{
+      text-transform: uppercase;
+      color: white;
       margin: 0;
+      @media screen and (min-width: 320px) {
+        font-size: 1.5rem;
+      }
+      @media screen and (min-width: 576px) {
+        font-size: 2.5rem;
+        padding-bottom: 5%;
+      }
+      @media screen and (min-width: 768px) {
+        width: 70%;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 4.5rem;
+      }
+      @media screen and (min-width: 1500px) {
+        font-size: 5.1rem;
+      }
+    }
+
+    &:last-child {
+      color: white;
+      @media screen and (min-width: 320px) {
+        font-size: 1rem;
+        padding-bottom: 5%;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 1.5rem;
+      }
     }
   }
 }
-
-.header-text {
-  &__text{
-    color: white;
-    font-size: 1.5rem;
-    margin-bottom: 5.6rem;
-    @media screen and (min-width: 320px){
-      margin: 0 0 0.5rem 0;
-      font-size: 1rem;
-      width: 40%;
-    }
-    @media screen and (min-width: 576px){
-      margin: 0 0 2.5rem 0;
-      font-size: 1.4rem;
-      width: 40%;
-    }
-    @media screen and (min-width: 1200px){
-      font-size: 1.5rem;
-      margin-bottom: 5.6rem;
-    }
-    p{
-      margin: 0;
-    }
-  }
-}
-
 
